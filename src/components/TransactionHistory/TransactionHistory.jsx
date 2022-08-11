@@ -11,7 +11,7 @@ function TransactionHistory({ items }) {
   ));
   return (
     <div className={s.sectionTable}>
-      <div className="contanier">
+      <div className="container">
         <table className={s.transactionHistory}>
           <thead>
             <tr>

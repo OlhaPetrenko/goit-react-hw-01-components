@@ -4,14 +4,18 @@ import s from './Statistics.module.css';
 
 function Statistics({ title, stats }) {
   const statListItem = stats.map(el => (
-    <li key={el.id} className={s.item}>
+    <li
+      key={el.id}
+      className={s.item}
+      style={{ backgroundColor: getRandomHexColor() }}
+    >
       <span className={s.label}>{el.label}</span>
       <span className={s.percentage}>{el.percentage}%</span>
     </li>
   ));
   return (
     <section className={s.statistics}>
-      <div className="contanier">
+      <div className="container">
         <div className={s.statisticCard}>
           {title && <h2 className={s.title}>{title}</h2>}
           <ul className={s.statList}>{statListItem}</ul>
@@ -31,5 +35,8 @@ Statistics.propTypes = {
     })
   ),
 };
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
 
 export default Statistics;

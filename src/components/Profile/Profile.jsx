@@ -5,13 +5,13 @@ import s from './Profile.module.css';
 function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className={s.sectionProfile}>
-      <div className="contanier">
+      <div className="container">
         <div className={s.profile}>
           <div className={s.description}>
             <img
               src={avatar}
               alt="User avatar"
-              className="avatar"
+              className={s.avatar}
               width="180"
             />
             <p className={s.name}>{username}</p>

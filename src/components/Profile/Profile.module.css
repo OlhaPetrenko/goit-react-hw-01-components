@@ -4,7 +4,7 @@
 }
 
 .profile {
-  width: 30%;
+  width: 25%;
   background-color: white;
   text-align: center;
   margin-left: auto;
@@ -21,6 +21,10 @@
   margin-top: 8px;
   color: rgb(79, 74, 74);
   font-weight: 500;
+}
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
 }
 .name {
   font-size: 24px;
