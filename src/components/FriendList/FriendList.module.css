@@ -1,0 +1,10 @@
+.sectionFtiends {
+  background-color: lightgray;
+  padding: 30px 0;
+}
+
+.friendLlist {
+  margin-right: auto;
+  margin-left: auto;
+  width: 20%;
+}

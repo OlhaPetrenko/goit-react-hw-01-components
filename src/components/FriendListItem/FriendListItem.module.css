@@ -1,1 +1,36 @@
-slc
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  gap: 8px;
+  border: 1px solid red;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 1px 2px rgb(0 0 0 / 12%), 5px 5px 1px rgb(0 0 0 / 14%),
+    5px 5px 3px rgb(0 0 0 / 20%);
+}
+.item:hover,
+.item:focus {
+  background-color: rgb(173, 227, 224);
+  border: 2px solid green;
+}
+.status {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.offline {
+  background-color: red;
+}
+
+.avatar {
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}
