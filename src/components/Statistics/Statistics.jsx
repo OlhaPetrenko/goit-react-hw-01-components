@@ -24,6 +24,9 @@ function Statistics({ title, stats }) {
     </section>
   );
 }
+Statistics.defaultProps = {
+  stats: [],
+};
 
 Statistics.propTypes = {
   title: PropTypes.string,

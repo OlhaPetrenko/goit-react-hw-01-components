@@ -27,6 +27,9 @@ function TransactionHistory({ items }) {
     </div>
   );
 }
+TransactionHistory.defaultProps = {
+  items: [],
+};
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(

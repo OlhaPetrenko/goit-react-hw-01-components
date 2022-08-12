@@ -8,9 +8,11 @@ import stat from '../data/stat.json';
 import friends from '../data/friends.json';
 import transactions from '../data/transactions.json';
 
+import s from './App.module.css';
+
 export const App = () => {
   return (
-    <div>
+    <div className={s.set}>
       <Profile
         username={user.username}
         tag={user.tag}
